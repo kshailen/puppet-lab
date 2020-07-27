@@ -1,0 +1,22 @@
+{
+  "nodes": {
+    "puppet-master.example.com": {
+      ":ip": "192.168.33.101",
+      "ports": [],
+      ":memory": 1024,
+      ":bootstrap": "bootstrap-master.sh"
+    },
+    "node-01.example.com": {
+      ":ip": "192.168.33.102",
+      "ports": [],
+      ":memory": 1024,
+      ":bootstrap": "bootstrap-node.sh"
+    },
+    "node-02.example.com": {
+      ":ip": "192.168.33.103",
+      "ports": [],
+      ":memory": 1024,
+      ":bootstrap": "bootstrap-node.sh"
+    }
+  }
+}
