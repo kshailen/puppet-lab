@@ -26,5 +26,10 @@ else
 
     # Add optional alternate DNS names to /etc/puppet/puppet.conf
     sudo sed -i 's/.*\[main\].*/&\ndns_alt_names = puppet,puppet-master.example.com/' /etc/puppet/puppet.conf
+    sudo sed -i 's/.*\[main\].*/&\ncertname = puppet/' /etc/puppet/puppet.conf
+
+    # symlink manifest from Vagrant synced folder location
+    ln -s /vagrant/site.pp /etc/puppet/manifests/site.pp
+    
 fi
 

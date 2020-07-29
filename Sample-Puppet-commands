@@ -1,0 +1,5 @@
+puppet cert list
+puppet cert sign <client-name>
+puppet cert sign  --all
+
+puppet cert list --all
